@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<script>
+  urls = ['https://www.surveymonkey.com/r/7J222YT','https://www.surveymonkey.com/r/7J2XD3C', 'https://www.surveymonkey.com/r/7J2Z99V', 'https://www.surveymonkey.com/r/7JCYVX6'];
+  var urlIndex = 0;
+
+function openUrl(){
+  url = urls[urlIndex % urls.length];
+  window.location = url;
+  urlIndex ++;
+}
+  </script>
+  <a href="javascript:openUrl()">Take me to the survey!</a>
+</body>
+</html>
