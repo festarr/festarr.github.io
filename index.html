@@ -8,10 +8,10 @@
 <body>
 <script>
   urls = ['https://www.surveymonkey.com/r/7J222YT','https://www.surveymonkey.com/r/7J2XD3C', 'https://www.surveymonkey.com/r/7J2Z99V', 'https://www.surveymonkey.com/r/7JCYVX6'];
-  var urlIndex = 0;
-
+  var myrandom=Math.round(Math.random()*3)
+  
 function openUrl(){
-  url = urls[urlIndex % urls.length];
+  url = urls[myrandom];
   window.location = url;
   urlIndex ++;
 }
