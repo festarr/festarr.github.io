@@ -3,19 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>HCRMA Resident Survey</title>
 </head>
 <body>
+
 <script>
-  urls = ['https://www.surveymonkey.com/r/7J222YT','https://www.surveymonkey.com/r/7J2XD3C', 'https://www.surveymonkey.com/r/7J2Z99V', 'https://www.surveymonkey.com/r/7JCYVX6'];
-  var myrandom=Math.round(Math.random()*3)
+  urlsSp = ['https://www.surveymonkey.com/r/GS5H27N','https://www.surveymonkey.com/r/GRQ7HJT', 'https://www.surveymonkey.com/r/GTJK93T', 'https://www.surveymonkey.com/r/GSLVDQQ'];
+  urlsEn = ['https://www.surveymonkey.com/r/6Q5L5N7', 'https://www.surveymonkey.com/r/BD3WXLF', 'https://www.surveymonkey.com/r/67JKGLL', 'https://www.surveymonkey.com/r/39ZKR36'];
   
-function openUrl(){
-  url = urls[myrandom];
+  var myrandom=Math.round(Math.random()*3);
+
+function openUrlSp(){
+  url = urlsSp[myrandom];
   window.location = url;
-  urlIndex ++;
+}
+
+function openUrlEn(){
+  url = urlsEn[myrandom];
+  window.location = url;
 }
   </script>
-  <a href="javascript:openUrl()">Take me to the survey!</a>
+  
+<div style="text-align:center">  
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM3g0BKtLE9Ir1w9IAJTWy1SHwTiqV16djq-pD4aKc07HmDjQ&s"
+   class="centerImage" alt="HCRMA Logo" height="120" width="350">
+</div>
+  
+<div style="text-align:center">  
+  <a href="javascript:openUrlEn()">Take me to the survey! (English)</a>
+  <a href="javascript:openUrlSp()">Llevame a la encuesta! (Español)</a>
+ </div>
+  
 </body>
 </html>
